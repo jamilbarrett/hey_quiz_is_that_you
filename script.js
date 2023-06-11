@@ -77,15 +77,17 @@ var startBtn = document.querySelector('#start-button')
 
 function endQuiz() {
     if (secondsLeft <= 0 || currentQuestionIndex >= questionData.length)
-
-
-        return body.innerText='Game Over'
-    console.log(endQuiz)
+    
+    
+    
+    return body.innerText='Game Over'
+    prompt('Enter Your Initials:')
+    
     //display prompt to enter name and final score
 }
 
 
-
+// This function controls the timer of the quiz
 function startTimer() {
     var timerInterval = setInterval(function () {
         secondsLeft--;
@@ -99,7 +101,7 @@ function startTimer() {
 }
 
 
-
+// This function creates the buttons and displays the questions for the quiz
 function showQuestion() {
     // console.log("showing a question now")
     var questionObj = questionData[currentQuestionIndex];
@@ -136,6 +138,7 @@ function showQuestion() {
 
 
 }
+// this function substracts 5 seconds if the user enters in the wrog answer, it also allows the user to proceed regardless if the question is asnwered correctly or not
 function checkAnswer(event) {
     var pressedAnswer = event.target.textContent
 
@@ -157,7 +160,7 @@ function checkAnswer(event) {
 }
 
 
-
+// this function starts the quiz and contains the other quizes in the order needed to run the game
 function startQuiz() {
     // console.log("Starting the quiz")
     secondsLeft = 60
