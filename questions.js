@@ -1,4 +1,4 @@
-var questionData = [
+const questionData = [
     {
       question: 'What does the acronym D.O.M. stand for?',
       choices: ['Dog Only Members', 'Document Object Model', 'Dancing On Mercury', 'Document On Memory'],
@@ -50,3 +50,4 @@ var questionData = [
       answer: 'to prevent the default behavior of an event'
     }
   ];
+

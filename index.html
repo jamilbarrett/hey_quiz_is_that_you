@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel ="stylesheet" href="style.css">
+    <title>Hey Quizzy</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./questions.js"></script>
+    <script defer src="./script.js"></script>
 </head>
-<body>
-    <button id ="start-button">Start Quiz</button>
-    <h1>Ready to Begin?</h1>
-    <div id="question-output">
-        <div id="timer"></div>
-        <h1 id="que"></h1>
-        <ul>
-            <li id="choice1"></li>
-            <li id="choice2"></li>
-            <li id="choice3"></li>
-            <li id="choice4"></li>
-        </ul>
 
+<body>
+    <h1 id="timer"></h1>
+    <div class="container" id="question-output">
+        <div class="center">
+            <button id="start-btn">Begin</button>
+        </div>
     </div>
 
-
-
-
-
-    <script src="questions.js"></script>
-    <script src="./script.js"></script>
 </body>
+
 </html>
