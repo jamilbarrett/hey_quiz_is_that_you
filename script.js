@@ -48,7 +48,6 @@ function saveScoreToLocalStorage(gamerTag, score) {
  
     const savedScores = JSON.parse(localStorage.getItem('quizScores')) || [];
 
-    // Create a new score object
     const newScore = {
         gamerTag,
         score
@@ -60,6 +59,11 @@ function saveScoreToLocalStorage(gamerTag, score) {
     // Save the updated scores back to local storage
     localStorage.setItem('quizScores', JSON.stringify(savedScores));
 }
+
+function displayScore(gamerTag, score)
+
+
+
 
     
 // Start Timer
