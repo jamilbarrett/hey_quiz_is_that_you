@@ -60,7 +60,11 @@ function saveScoreToLocalStorage(gamerTag, score) {
     localStorage.setItem('quizScores', JSON.stringify(savedScores));
 }
 
-function displayScore(gamerTag, score)
+function displayScore(gamerTag, score) {
+    const scoreEl = document.createElement('p');
+    scoreEl.textContent = `Player: ${gamerTag}, Score: ${score}`;
+    questionOutputEl.appendChild(scoreEl);
+}
 
 
 
